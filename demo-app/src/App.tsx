@@ -8,8 +8,11 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import Navigation from './pages/navigation/navigation';
 import Dashboard from './pages/dashboard/dashboard';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
+  library.add(fas);
 
   return (
     <div className="app bg-background">
